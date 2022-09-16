@@ -13,9 +13,9 @@ char* ReadString(FILE* stream) {
         return NULL;
     }
 
-    const int CHUNK_SIZE = 256;
-    char* buffer = (char*)malloc(CHUNK_SIZE);
-    int bufferSize = CHUNK_SIZE;
+    const int chunkSize = 256;
+    char* buffer = (char*)malloc(chunkSize);
+    int bufferSize = chunkSize;
 
     if(!buffer) {
         printf("Couldn't allocate buffer");
@@ -28,8 +28,8 @@ char* ReadString(FILE* stream) {
         buffer[idx++] = readChar;
 
         if(idx == bufferSize) {
-            buffer = realloc(buffer, bufferSize + CHUNK_SIZE);
-            bufferSize += CHUNK_SIZE;
+            buffer = realloc(buffer, bufferSize + chunkSize);
+            bufferSize += chunkSize;
         }
 
         if(readChar == '\n') {
