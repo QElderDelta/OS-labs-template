@@ -1,4 +1,4 @@
-Checks:          '-*,bugprone-*,readability-*,modernize-*,performance-*'
+Checks:          '-*,bugprone-*,readability-*,modernize-*,performance-*,-modernize-use-trailing-return-type'
 HeaderFilterRegex: ''
 CheckOptions:
   - key:             readability-identifier-naming.VariableCase
