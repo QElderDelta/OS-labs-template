@@ -66,6 +66,7 @@ TEST(ThirdLabTest, ThreadConfigurations) {
     performTestForGivenSize(3, 3, 10);
     performTestForGivenSize(10, 10, 10);
     performTestForGivenSize(100, 100, 15);
+    performTestForGivenSize(3000, 3000, 4);
 }
 
 TEST(ThirdLabTest, PerfomanceTest) {
